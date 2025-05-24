@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Offers</title>  
+  <style>
+    body{margin: 0; padding: 0;}
+    .ourprice {
+      background-color: #f8f3ea;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #de1219;
+      font-size: 20px;
+      /* padding: 7px 15px; */
+      /* -webkit-animation: blink 800ms infinite;
+              animation: blink 800ms infinite; */
+    }
+    /* @-webkit-keyframes blink { 50% { background-color: rgb(0, 0, 0); }}
+    @keyframes blink { 50% { background-color: rgb(0, 0, 0); }} */
+    .ourprice img {width: 75%; padding: 4px;}
+    .offer-row {width: 100%; display: flex; flex-wrap: wrap;}
+    .offer-coll-1 {width: 20%;}
+    .offer-coll-2 {width: 80%;}
+    .offer-text {font-size: 30px; text-align: center;}
+    .offer-text2 {font-size: 18px; text-align: center;}
+    .offer-text3 {font-size: 12px; text-align: center; color: #000;}
+    a {text-decoration: none;}
+    .offer-button {
+      background-color: #de1219;
+      color: #fff;
+    width: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 10px;
+    }
+    @media screen and (max-device-width:640px), screen and (max-width:640px) {
+       .offer-coll-1 {width: 35%;}
+      .offer-coll-2 {width: 65%;}
+      .ourprice img {width: 100%;}
+      .offer-text {font-size: 24px;}
+      .offer-text2 {font-size: 14px;}
+      .offer-text3 {font-size: 10px;}
+      .offer-button {width: 100px; font-size: 14px; padding: 5px; margin-bottom: 5px;}
+    }
+  </style>
+</head>
+
+<body>
+  <a target="_blank" href="../ecommerce-website-development-packages.html">
+  <div class="ourprice offer-row" style="box-shadow: inset 0 0 0 2px red;">
+    <div class="offer-coll-1">
+      <img src="img/50-off.gif" alt="Offer" width="50%" >
+    </div>
+    <div class="offer-coll-2">
+      <div class="offer-text">Special Discount! </div>
+      <div class="offer-text2">Save Flat 50%, On All Packages</div>
+      <div class="offer-text3">Offer Ends Soon</div>
+      <p class="offer-button">Book Now!</p>
+    </div>
+  </div>
+</a>
+</body>
+
+</html>

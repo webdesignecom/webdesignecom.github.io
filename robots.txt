@@ -1,0 +1,4 @@
+Sitemap: https://webdesignecom.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
