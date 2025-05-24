@@ -1,28 +1,30 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 <url>
-<loc>https://webdesignecom.github.io/blog/shopify-unite.html</loc>
-<lastmod>2025-05-24T10:00:00+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1.0000</priority>
+  <loc>https://webdesignecom.github.io/blog/iranian-e-commerce-shipping-regulations.html</loc>
+  <lastmod>2025-05-24T13:10:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://webdesignecom.github.io/blog/shopify-reunite.html</loc>
-<lastmod>2025-05-24T11:00:00+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8000</priority>
+  <loc>https://webdesignecom.github.io/blog/affordable-yet-premium-designs.html</loc>
+  <lastmod>2025-05-24T13:10:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://webdesignecom.github.io/blog/affordable-yet-premium-designs.html</loc>
-<lastmod>2025-05-24T12:00:00+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8000</priority>
+  <loc>https://webdesignecom.github.io/blog/shopify-reunite.html</loc>
+  <lastmod>2025-05-24T13:10:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://webdesignecom.github.io/blog/iranian-e-commerce-shipping-regulations.html</loc>
-<lastmod>2025-05-24T13:00:00+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8000</priority>
+  <loc>https://webdesignecom.github.io/blog/shopify-unite.html</loc>
+  <lastmod>2025-05-24T13:10:15+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 </urlset>
