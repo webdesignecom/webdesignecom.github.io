@@ -1274,7 +1274,9 @@ h3 .accent-text {
   height: 3px;
   background: var(--accent-color);
   left: 0;
+  right: 0;
   bottom: 0;
+  margin: auto;
 }
 
 .features .tab-pane ul {

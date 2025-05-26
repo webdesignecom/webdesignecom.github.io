@@ -141,6 +141,7 @@ tr:nth-child(even) {
 .ourprice  {font-size: 13px; padding: 10px 5px;}
 .customers-badge-inner {margin-right: 50px;}
 .margbotmob {margin-bottom: 5px; font-size: 14px;}
+.features ul li a h4 {font-size: 14px !important;}
 .packages-section {margin-top: -110px;}
 .clients .section-title {padding-bottom: 10px;}
 .portfoliobotmob {margin-bottom: 20px;}
@@ -163,5 +164,6 @@ tr:nth-child(even) {
 .about .about-description {font-size: 16px;}
 .about .feature-list li {font-size: 16px;}
 .footer .copyright {margin-bottom: 20px;}
+
 
   }
