@@ -8,6 +8,17 @@
 .hero .btn-primary {padding: 0.5rem .8rem; font-size: 14px;}
 .hero .btn-success {padding: 0.5rem .8rem; font-size: 14px;}
 .hero-content h1 {font-size: 2.5rem !important; text-align: left; margin-bottom:0 !important;}
+.punch-line {background-color: #dbfbb9; padding: 20px; border-radius: 10px;}
+.punch-line h2 {font-size: 26px !important; color: #028700;}
+.punch-line h2 span {font-size: 16px;}
+.punch-line h2 span a {color: #ff5500;}
+.animatedText {
+  color: black;
+  text-align: left;  
+  display: inline-block;
+  padding: 0;
+  border-right: 1px solid #414141;
+}
 .breadcrumb {font-size: 13px; margin-bottom:0;}
 .publist-section {font-size: 13px; color: #444;}
 .publist-section span {color: #4e9502; font-weight: 500;}
@@ -84,9 +95,13 @@ th {font-weight: 400;}
 .extra-list {font-size: 12px;}
 
 /*======blog+page=======*/
-.blog-page h2 {font-size: 3.5rem; font-weight: 600;}
+.blog-page h2 {font-size: 2.5rem; font-weight: 600;}
+.display-4 {font-size: 2.5rem;}
 .blog-page p {font-size: 1.2rem;}
-.services-icon .stat-item i {font-size: 2.5rem; color: #4e9502; border: 2px #4e9502 dotted; border-radius: 50px; padding: 0px 7px;}
+.services-icon .stat-item i {font-size: 2.5rem; color: #4e9502; border: 2px #4e9502 dotted; border-radius: 50px; padding: 0px 7px; text-align: center;}
+.services-icon .stat-item .icon {text-align: center;}
+.services-icon .stat-item .stat-icon {text-align: center;}
+.stat-content {text-align: center;}
 /*======blog+page=======*/
 .download-wallpaper {margin: 0 auto; text-align: center;}
 .download-wallpaper img {margin-bottom: 10px;}
@@ -125,6 +140,7 @@ tr:nth-child(even) {
 .ludwig:after {
   content: '\201D';
 }
+.industry iframe {width: 100%; height: 450px;}
 
 @media (max-width: 992px) {
 .hero {padding-top: 75px;}    
@@ -145,6 +161,7 @@ tr:nth-child(even) {
 .packages-section {margin-top: -110px;}
 .clients .section-title {padding-bottom: 10px;}
 .portfoliobotmob {margin-bottom: 20px;}
+.industry iframe {width: 100%; height: 1000px;}
 .footer-links ul li {position: relative; display: inline-flex !important; margin-right: 20px;}
 .iframehire {width: 100%; height: 325px;}
 .footer-links ul li:before {
