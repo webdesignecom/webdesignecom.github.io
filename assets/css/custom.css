@@ -46,8 +46,10 @@
 .iframehire {width: 100%; height: 250px;}
 .service-details h2 {font-size: 2rem !important; font-weight: 400 !important;}
 .service-details ul li {list-style: circle !important; display: list-item; margin-left: 20px; font-size: 1.2rem;}
+.portfolio-box {border: 1px #4e9502 solid;margin-bottom: 10px;}
+.portfolio-box p {margin: 3px; font-size: 12px !important; font-weight: bold;}
 .portfoliobotmob {margin-bottom: 20px;}
-.portfoliobotmob img {border: 2px #4e9502 solid;}
+.portfoliobotmob img {border: 1px #4e9502 solid;}
 .pricing-card-title {font-size: 1.7rem;}
 th {font-weight: 400;}
 /* fotter cta */
