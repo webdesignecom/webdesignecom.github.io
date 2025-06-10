@@ -178,8 +178,8 @@
 
 // Define an array of strings to be displayed and erased
 const textArray = [
-  "50–70% more affordable than local U.S. agencies",
-  "U.S.-friendly communication and work hours",
+  "50–70% more affordable than local agencies.",
+  "Communication and work hours according You.",
   "Less than your monthly coffee habit.",
   "Launch your dream with the cost of a weekend getaway."
   
