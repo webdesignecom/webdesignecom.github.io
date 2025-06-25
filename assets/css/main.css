@@ -1004,6 +1004,7 @@ h3 .accent-text {
 .example {font-size: 20px; background-color: #3b82f6; color: #fff; text-align: center;}
 .example-box a p { margin-bottom: 10px; font-size: 14px; text-align: center;}
 .example-box .hero-buttons {margin: 10px; text-align: center;}
+.example-box div a img {text-align: center;}
 
 @media (max-width: 575px) {
   .hero .stat-item {
