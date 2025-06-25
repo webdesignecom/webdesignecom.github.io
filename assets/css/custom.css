@@ -190,7 +190,7 @@ tr:nth-child(even) {
 .section-title p {font-size: 16px;}
 .services .service-card p {font-size: 16px;}
 .about .about-description {font-size: 16px;}
-.about .feature-list li {font-size: 16px;}
+.about .feature-list li {font-size: 16px; text-align: left;}
 .footer .copyright {margin-bottom: 20px;}
 
   }
