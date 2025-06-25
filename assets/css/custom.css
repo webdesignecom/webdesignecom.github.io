@@ -1,3 +1,7 @@
+.home-banner {margin-top: 78px;}
+.banner-cta {background-color: var(--accent-color); padding: 20px 10%;}
+.banner-cta img {width: 110%;}
+.cta-text {font-size: 1.3rem; line-height: 1.5rem; color: #fff; padding-top: 10px;}
 .hero-section {padding-bottom: 50px;}
 .hero-image-inner {margin-bottom: 110px; max-width: 150px !important; }
 .hero-image-new {margin-bottom:0px;}
@@ -8,8 +12,8 @@
 .hero .btn-primary {padding: 0.5rem .8rem; font-size: 14px;}
 .hero .btn-success {padding: 0.5rem .8rem; font-size: 14px;}
 .hero-content h1 {font-size: 2.5rem !important; text-align: left; margin-bottom:0 !important;}
-.punch-line {background-color: #dbfbb9; padding: 20px; border-radius: 10px;}
-.punch-line h2 {font-size: 26px !important; color: #028700;}
+.punch-line {background-color: #dde8fb; padding: 20px; border-radius: 10px;}
+.punch-line h2 {font-size: 26px !important; font-weight: 400 !important; color: #226ee7;}
 .punch-line h2 span {font-size: 16px;}
 .punch-line h2 span a {color: #ff5500;}
 .animatedText {
@@ -21,10 +25,10 @@
 }
 .breadcrumb {font-size: 13px; margin-bottom:0;}
 .publist-section {font-size: 13px; color: #444;}
-.publist-section span {color: #4e9502; font-weight: 500;}
+.publist-section span {color: #3b82f5; font-weight: 500;}
 /*======ourprice=======*/
 .ourprice {
-  background-color: #028700;
+  background-color: #3b82f5;
   color: #fff;
   font-size: 20px;
   padding: 7px 15px;
@@ -36,9 +40,9 @@
 /*======ourprice=======*/
 .offer-faq .ourprice {font-size: 15px; padding: 5px;}
 .offer-faq a {
-  border: 1px #4e9502 solid;
+  border: 1px #3b82f5 solid;
     padding: 2px 10px;
-    background: #4e9502;
+    background: #3b82f5;
     color: #fff;
     font-size: 14px;
     border-radius: 20px;
@@ -46,17 +50,15 @@
 .iframehire {width: 100%; height: 250px;}
 .service-details h2 {font-size: 2rem !important; font-weight: 400 !important;}
 .service-details ul li {list-style: circle !important; display: list-item; margin-left: 20px; font-size: 1.2rem;}
-.portfolio-box {border: 1px #4e9502 solid;margin-bottom: 10px;}
-.portfolio-box p {margin: 3px; font-size: 12px !important; font-weight: bold;}
 .portfoliobotmob {margin-bottom: 20px;}
-.portfoliobotmob img {border: 1px #4e9502 solid;}
+.portfoliobotmob img {border: 2px #3b82f5 solid;}
 .pricing-card-title {font-size: 1.7rem;}
 th {font-weight: 400;}
 /* fotter cta */
 .footer-cta {
-  background-color: #4e9502;
+  background-color: var(--accent-color);
   width: 100%;
-  border-top: 3px solid #2a5100;
+  border-top: 2px solid #1f2937;
   position: fixed;
   bottom: 0;
   margin: 0 auto;
@@ -97,18 +99,19 @@ th {font-weight: 400;}
 .extra-list {font-size: 12px;}
 
 /*======blog+page=======*/
-.blog-page h2 {font-size: 2.5rem; font-weight: 600;}
+.blog-page h2 {font-size: 1.5rem; font-weight: 600;}
+.blog-page h2 span {font-size: .9rem;}
 .display-4 {font-size: 2.5rem;}
 .blog-page p {font-size: 1.2rem;}
-.services-icon .stat-item i {font-size: 2.5rem; color: #4e9502; border: 2px #4e9502 dotted; border-radius: 50px; padding: 0px 7px; text-align: center;}
+.services-icon .stat-item i {font-size: 2.5rem; color: #3b82f6; border: 2px #3b82f6 dotted; border-radius: 50px; padding: 0px 7px; text-align: center;}
 .services-icon .stat-item .icon {text-align: center;}
 .services-icon .stat-item .stat-icon {text-align: center;}
 .stat-content {text-align: center;}
 /*======blog+page=======*/
 .download-wallpaper {margin: 0 auto; text-align: center;}
 .download-wallpaper img {margin-bottom: 10px;}
-.download-wallpaper a {background-color: #4e9502; color: #fff; padding: 5px 10px; border: 2px solid #4e9502; border-radius: 10px;}
-.download-wallpaper a:hover {background-color: #fff; color: #4e9502; border: 2px solid #4e9502; border-radius: 10px;}
+.download-wallpaper a {background-color: #3b82f6; color: #fff; padding: 5px 10px; border: 2px solid #3b82f6; border-radius: 10px;}
+.download-wallpaper a:hover {background-color: #fff; color: #3b82f6; border: 2px solid #3b82f6; border-radius: 10px;}
 
 table {
   font-family: arial, sans-serif;
@@ -129,7 +132,7 @@ tr:nth-child(even) {
 .ludwig {
   position: relative;
   padding-left: 1em;
-  border-left: 0.2em solid #4e9502;
+  border-left: 0.2em solid #3b82f6;
   font-size: 1.2em;
   line-height: 1.5em;
   font-weight: 400;
@@ -137,17 +140,23 @@ tr:nth-child(even) {
 .ludwig:before, .ludwig:after {
   content: '\201C';
   font-family: 'Sanchez';
-  color: #4e9502;
+  color: #3b82f6;
 }
 .ludwig:after {
   content: '\201D';
 }
 .industry iframe {width: 100%; height: 450px;}
 
+
 @media (max-width: 992px) {
-.hero {padding-top: 75px;}    
+.banner-cta {background-color: #fff; padding: 10px; margin-bottom: -30px;}
+.banner-back-mob {background-color: var(--accent-color); margin: 4px; border-radius: 10px;}
+.banner-mob-gap {margin: 30px;}
+.banner-cta img {width: 130%}
+.cta-text {font-size: .9rem; padding-top: 0;}
+.hero {padding-top: 100px;}    
 .hero-image-inner {margin-bottom: 0px; margin-top: -20px; max-width: 100px !important;}
-.header .btn-getstarted {font-size: 12px; padding: 4px 8px;}
+.header .btn-getstarted {font-size: 12px; padding: 4px 0; width: 200px;}
 .hero-content h1 {font-size: 20px !important;}
 .hero-content h3 {font-size: 15px;}
 .hero .btn-primary {padding: 0.5rem 1rem;}
@@ -155,15 +164,15 @@ tr:nth-child(even) {
 .hero .hero-content p {
   font-size: 16px;
 }
+.punch-line h2 {font-size: 18px !important;}
+.punch-line h2 span {font-size: 12px !important;}
 .home-hero .ourprice {font-size: 13px; padding: 10px 5px;}
 .ourprice  {font-size: 13px; padding: 10px 5px;}
 .customers-badge-inner {margin-right: 50px;}
 .margbotmob {margin-bottom: 5px; font-size: 14px;}
-.features ul li a h4 {font-size: 14px !important;}
 .packages-section {margin-top: -110px;}
 .clients .section-title {padding-bottom: 10px;}
 .portfoliobotmob {margin-bottom: 20px;}
-.industry iframe {width: 100%; height: 1000px;}
 .footer-links ul li {position: relative; display: inline-flex !important; margin-right: 20px;}
 .iframehire {width: 100%; height: 325px;}
 .footer-links ul li:before {
@@ -174,7 +183,7 @@ tr:nth-child(even) {
 .blog-page .blog {margin-top: -20px;}
 .blog-page h2 {font-size: 22px; font-weight: 600;}
 .blog-page p {font-size: 16px;}
-.service-details h1 {font-size: 20px; font-weight: bold; color: #4e9502;}
+.service-details h1 {font-size: 20px; font-weight: bold; color: #3b82f5;}
 .service-details h2, h3, h4 {font-size: 20px !important; font-weight: bold !important; }
 .service-details p {font-size: 16px;}
 .service-details ul li {font-size: 16px;}
@@ -183,6 +192,5 @@ tr:nth-child(even) {
 .about .about-description {font-size: 16px;}
 .about .feature-list li {font-size: 16px;}
 .footer .copyright {margin-bottom: 20px;}
-
 
   }

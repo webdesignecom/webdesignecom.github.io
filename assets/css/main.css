@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #020202; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4e9502; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #3b82f6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4e9502; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #3b82f6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #4e9502; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #3b82f6; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #4e9502;
+  --background-color: #3b82f6;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #409dfd;
@@ -144,23 +144,23 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   /* --background-color: rgba(255, 255, 255, 0); */
-  color: var(--default-color);
-  background-color: var(--background-color);
-  /* padding: 20px 0; */
+  color: var(--default-color);  
+  background: #f9fafb;
+  /* padding: 5px 0; */
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header .header-container {
-  background: var(--surface-color);
+  background: #f9fafb;
   /* border-radius: 50px;
   padding: 5px 25px; */
   /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
 }
 
 .scrolled .header .header-container {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: color-mix(in srgb, #f9fafb, transparent 5%);
 }
 
 .header .logo {
@@ -168,9 +168,12 @@ h6 {
   padding-left: 5px;
 }
 
+
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  width: 64%;
+  padding: 15px 0;
+  /* max-height: 36px;
+  margin-right: 8px; */
 }
 
 .header .logo h1 {
@@ -182,9 +185,10 @@ h6 {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: var(--accent-color);
+  /* background: var(--accent-color); */
   font-size: 16px;
+  font-weight: 600;
   padding: 8px 20px;
   margin: 0 0 0 30px;
   border-radius: 50px;
@@ -221,7 +225,6 @@ h6 {
   .header .navmenu {
     order: 3;
   }
-  
 }
 
 /*--------------------------------------------------------------
@@ -248,7 +251,8 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
+    padding: 2px 10px;
+    border-radius: 50px;
     font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -267,14 +271,15 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu li:last-child a {
+  /* .navmenu li:last-child a {
     padding-right: 0;
-  }
+  } */
 
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    background-color: var(--nav-hover-color);;
+    color: #fff;
   }
 
   .navmenu .dropdown ul {
@@ -333,7 +338,8 @@ h6 {
     visibility: visible;
   }
 }
-
+.banner-display-desk {display: block;}
+  .banner-display-mob {display: none;}
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -721,7 +727,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding-top: 60px;
+  padding-top: 100px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
 }
 
@@ -780,10 +786,18 @@ h3 .accent-text {
 }
 
 @media (max-width: 575px) {
+  .banner-display-desk {display: none;}
+  .banner-display-mob {display: block;}
+  .header .logo img {width: 90%; padding:6px 0;}
+  .header .header-container {padding: 0;}
+  .header {padding-top: 5px;    }
+  .header .logo {padding-left:0;}
   .hero .hero-content h1 {
     font-size: 2rem;
   }
-  .clients .swiper-slide img {max-width: 120% !important;}
+.home-banner {
+    margin-top: 50px !important;
+}
 }
 
 .hero .company-badge {
@@ -816,8 +830,8 @@ h3 .accent-text {
 }
 
 .hero .btn-success {
-  background-color: #3a7000;
-  border-color: #3a7000;
+  background-color: #1f2937;
+  border-color: #1f2937;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -826,9 +840,26 @@ h3 .accent-text {
 }
 
 .hero .btn-success:hover {
-  background-color: #0d6b3f;
-  border-color: #0d6b3f;
+  background-color: #3a5478;
+  border-color: #3a5478;
 }
+
+.btn-page {
+  background-color: #1f2937;
+  border-color: #1f2937;
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-page:hover {
+  background-color: #3a5478;
+  border-color: #3a5478;
+  color: #fff;
+}
+
 
 .hero .btn-link {
   color: var(--heading-color);
@@ -974,6 +1005,7 @@ h3 .accent-text {
   .hero .stat-item {
     padding: 1.5rem;
   }
+  .clients .swiper-slide img {max-width: 120% !important;}
 }
 
 @keyframes float-badge {
@@ -1009,7 +1041,7 @@ h3 .accent-text {
 
 @media (max-width: 992px) {
   .about .about-title {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1030,8 +1062,8 @@ h3 .accent-text {
 }
 
 .about .feature-list li {
-  /* display: flex; */
-  /* align-items: center; */
+  /* display: flex;
+  align-items: center; */
   gap: 0.75rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -1274,9 +1306,7 @@ h3 .accent-text {
   height: 3px;
   background: var(--accent-color);
   left: 0;
-  right: 0;
   bottom: 0;
-  margin: auto;
 }
 
 .features .tab-pane ul {
