@@ -79,43 +79,73 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main blog-page">
+    <!-- banner slider -->
+  <div id="robotcarousel" class="carousel slide home-banner" data-bs-ride="carousel">
+  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#robotcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#robotcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  
+  <div class="carousel-inner"> 
+    
+    <div class="carousel-item active">
+      <img class="w-100 banner-display-desk" src="assets/img/banner1.jpg" alt="Web Design company">
+      <img class="w-100 banner-display-mob" src="assets/img/banner1m.jpg" alt="Web Design company">
+    </div>
+    <div class="carousel-item">
+      <a href="website-design-development-packages.html">
+        <img class="w-100 banner-display-desk" src="assets/img/banner2.jpg" alt="Web Design Offer">
+        <img class="w-100 banner-display-mob" src="assets/img/banner2m.jpg" alt="Web Design Offer">
+      </a>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#robotcarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#robotcarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+    <!-- banner slider -->
+     <!-- CTA Section -->
+    <div class="banner-cta">
+      <div class="container">    
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 banner-back-mob">
+              <div class="row banner-mob-gap">
+                <div class="col-3"><img src="assets/img/quality-icon.jpg" alt="Quality"></div>
+                <div class="col-9 cta-text">Quality <br>You Can Trust</div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 banner-back-mob">
+              <div class="row banner-mob-gap">
+                <div class="col-3"><img src="assets/img/price-icon.jpg" alt="Pricing"></div>
+                <div class="col-9 cta-text">Affordable  <br>Price Guarantee</div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 banner-back-mob">
+              <div class="row banner-mob-gap">
+                <div class="col-3"><img src="assets/img/hand-icon.jpg" alt="Growth"></div>
+                <div class="col-9 cta-text">Growth <br>That Matters</div>
+              </div>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+    <!-- /CTA Section --> 
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4">
-            <div class="hero-image" data-aos="fade-right" data-aos-delay="200">   
-              <div>               
-              <a href="https://www.linkedin.com/in/pradeepkumarnirmal/" target="_blank">
-                <img class="hero-image-inner hero-image-new" src="assets/img/Pradeep-Kumar-Nirmal-Remote-Shopify-Developer-Designer-Expert.png" alt="Web Design eCom" class="img-fluid">
-                <p>Pradeep Kumar Nirmal<br><b> Manager:</b> Web Design eCom</p>
-                <div class="customers-badge customers-badge-inner customers-badge-new">
-                  <div class="customer-avatars">
-                    <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
-                    <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
-                    <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
-                    <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
-                    <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
-                    <span class="avatar more">15K+</span>
-                    <span style="color: #0a66c2; font-size: 28px; margin-top: 3px;"><i class="bi bi-linkedin"></i></span>
-                  </div>
-                  <p class="mb-0 mt-2">15,000 <sup>+</sup>  Linkedin Connections</p>
-              </div>
-            </a>
-            </div>
-            <div class="hero-buttons">
-              <a href="tel:+91-8383081676" class="btn btn-primary me-0 me-sm-2 mx-1 margbotmob"><i class="bi bi-telephone me-1"></i> +91-8383081676</a>
-              <a class="btn btn-success me-0 me-sm-2 mx-1 margbotmob" href="https://wa.me/918383081676?text=Hello Pradeep, I have contacted you through Github."><i class="bi bi-whatsapp me-1"></i> Chat on WhatsApp</a>
-              <a href="mailto:info@webdesignecom.com" class="btn btn-link mt-2 mt-sm-0 d-none d-sm-block">
-                <i class="bi bi-envelope me-1"></i>
-                info@webdesignecom.com
-              </a>
-            </div>
-          </div>
-          </div>
-          <div class="col-lg-8">
+          
+          <div class="col-lg-12">
             <div class="hero-content" data-aos="fade-left" data-aos-delay="200">
               
               
@@ -125,44 +155,9 @@
               <p style="text-align: left;">
                 With 15+ years of experience, Shopify and Shopify Plus developers in India excel in creating custom, high-performance eCommerce websites. Skilled in advanced functionality, scalability, and user-friendly design, they deliver tailored solutions for both startups and large-scale brands, transforming ideas into impactful online stores that drive business growth.
               </p> 
-              <iframe src="offers/offer.html" width="100%" title="Offer"></iframe> 
             </div>
           </div>          
         </div>
-
-        <div class="row stats-row gy-4 mt-5" data-aos="zoom-in" data-aos-delay="200">
-          <div class="col-lg-4 col-md-12">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="stat-content">
-                <h4>Effort in Delivering Quality Work</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="stat-content">
-                <h4>Affordable Price</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <div class="stat-content">
-                <h4>Your Store Growth</h4>
-              </div>
-            </div>
-          </div>          
-        </div>
-
       </div>
 
     </section>

@@ -99,10 +99,10 @@ th {font-weight: 400;}
 .extra-list {font-size: 12px;}
 
 /*======blog+page=======*/
-.blog-page h2 {font-size: 1.5rem; font-weight: 600;}
+.blog-page h2 {font-size: 1.5rem; font-weight: 500;}
 .blog-page h2 span {font-size: .9rem;}
 .display-4 {font-size: 2.5rem;}
-.blog-page p {font-size: 1.2rem;}
+.blog-page p {font-size: 1rem;}
 .services-icon .stat-item i {font-size: 2.5rem; color: #3b82f6; border: 2px #3b82f6 dotted; border-radius: 50px; padding: 0px 7px; text-align: center;}
 .services-icon .stat-item .icon {text-align: center;}
 .services-icon .stat-item .stat-icon {text-align: center;}

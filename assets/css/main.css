@@ -500,7 +500,7 @@ h6 {
 }
 
 .footer .footer-about p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--heading-font);
 }
 
@@ -547,7 +547,7 @@ h6 {
 }
 
 .footer .footer-links ul li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -719,7 +719,7 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -755,7 +755,7 @@ section,
 }
 
 .hero .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .hero .hero-content h1 h3 .accent-text {
@@ -811,7 +811,7 @@ h3 .accent-text {
 }
 
 .hero .company-badge i {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .hero .btn-primary {
@@ -990,7 +990,7 @@ h3 .accent-text {
 }
 
 .hero .stat-item .stat-content h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
 }
@@ -1046,14 +1046,14 @@ h3 .accent-text {
 
 @media (max-width: 992px) {
   .about .about-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 .about .about-description {
   margin-bottom: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about .feature-list-wrapper {
@@ -1077,7 +1077,7 @@ h3 .accent-text {
 
 .about .feature-list li i {
   color: var(--accent-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-right: 5px;
 }
 
@@ -1089,14 +1089,14 @@ h3 .accent-text {
 }
 
 .about .profile .profile-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
 }
 
 .about .profile .profile-position {
   color: var(--accent-color);
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about .contact-info {
@@ -1298,8 +1298,8 @@ h3 .accent-text {
 
 .features .tab-pane h3 {
   color: var(--heading-color);
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 1.5rem;
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1477,7 +1477,7 @@ h3 .accent-text {
   z-index: 2;
 }
 .call-to-action h3 {color: var(--contrast-color);}
-.call-to-action p {font-size: 1.2rem;}
+.call-to-action p {font-size: 1rem;}
 
 .call-to-action .btn-cta {
   background-color: color-mix(in srgb, var(--contrast-color) 15%, transparent);
@@ -1717,7 +1717,7 @@ h3 .accent-text {
   font-style: italic;
   margin: 15px 0 0 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -1807,7 +1807,7 @@ h3 .accent-text {
 .services .service-card p {
   margin-bottom: 25px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -1944,7 +1944,7 @@ h3 .accent-text {
 .pricing .pricing-card .features-list li i {
   color: var(--accent-color);
   margin-right: 0.75rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .pricing .pricing-card .btn {
@@ -2032,7 +2032,7 @@ h3 .accent-text {
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -2175,7 +2175,7 @@ h3 .accent-text {
 
 .contact .info-item .content h4 {
   color: var(--contrast-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -2251,7 +2251,7 @@ h3 .accent-text {
 }
 
 .contact .contact-form .btn i {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact .contact-form .btn:hover {
@@ -2371,7 +2371,7 @@ h3 .accent-text {
 }
 
 .service-details p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 30px;
 }
 
