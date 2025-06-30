@@ -940,7 +940,7 @@ h3 .accent-text {
     margin: 1rem auto;
     max-width: 250px;
   }
-  .blog {margin-top: -123px;}
+  /* .blog {margin-top: -123px;} */
 }
 
 .hero .stats-row {
@@ -2138,7 +2138,7 @@ h3 .accent-text {
 
 @media (max-width: 992px) {
   .contact .info-box {
-    padding: 1.5rem;
+    padding:.5rem;
   }
 }
 
@@ -2153,8 +2153,8 @@ h3 .accent-text {
 }
 
 .contact .info-item .icon-box {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
   border-radius: 50%;
   display: flex;

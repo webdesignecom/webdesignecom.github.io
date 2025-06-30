@@ -147,7 +147,6 @@ tr:nth-child(even) {
 }
 .industry iframe {width: 100%; height: 450px;}
 
-
 @media (max-width: 992px) {
 .banner-cta {background-color: #fff; padding: 10px; margin-bottom: -30px;}
 .banner-back-mob {background-color: var(--accent-color); margin: 4px; border-radius: 10px;}
@@ -167,11 +166,15 @@ tr:nth-child(even) {
 .punch-line h2 {font-size: 18px !important;}
 .punch-line h2 span {font-size: 12px !important;}
 .home-hero .ourprice {font-size: 13px; padding: 10px 5px;}
+.section-title {padding-bottom: 10px;}
 .ourprice  {font-size: 13px; padding: 10px 5px;}
 .customers-badge-inner {margin-right: 50px;}
+.services .service-card h3 {padding-top: 15px;}
 .margbotmob {margin-bottom: 5px; font-size: 14px;}
-.packages-section {margin-top: -110px;}
+/* .packages-section {margin-top: -110px;} */
 .clients .section-title {padding-bottom: 10px;}
+.display-4 {font-size: 1.5rem;}
+.section-title h2 {font-size: 1.5rem;}
 .portfoliobotmob {margin-bottom: 20px;}
 .footer-links ul li {position: relative; display: inline-flex !important; margin-right: 20px;}
 .iframehire {width: 100%; height: 325px;}
@@ -184,7 +187,7 @@ tr:nth-child(even) {
 .blog-page h2 {font-size: 22px; font-weight: 600;}
 .blog-page p {font-size: 16px;}
 .service-details h1 {font-size: 20px; font-weight: bold; color: #3b82f5;}
-.service-details h2, h3, h4 {font-size: 20px !important; font-weight: bold !important; }
+.service-details h2, h3, h4 {font-size: 16px !important; font-weight: bold !important; }
 .service-details p {font-size: 16px;}
 .service-details ul li {font-size: 16px;}
 .section-title p {font-size: 16px;}

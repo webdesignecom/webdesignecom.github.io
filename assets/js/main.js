@@ -1,229 +1,200 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Oct 28 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-(function() {
+(function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
+  // Scroll toggle on header
   function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    const body = document.querySelector('body');
+    const header = document.querySelector('#header');
+    if (!header || (!header.classList.contains('scroll-up-sticky') &&
+                    !header.classList.contains('sticky-top') &&
+                    !header.classList.contains('fixed-top'))) return;
+    window.scrollY > 100 ? body.classList.add('scrolled') : body.classList.remove('scrolled');
   }
-
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
+  // Mobile Nav Toggle
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+  function mobileNavToggle() {
+    document.body.classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
   if (mobileNavToggleBtn) {
-    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+    mobileNavToggleBtn.addEventListener('click', mobileNavToggle);
   }
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
+  // Hide mobile nav on nav link click
+  document.querySelectorAll('#navmenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (document.body.classList.contains('mobile-nav-active')) {
+        mobileNavToggle();
       }
     });
-
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+  // Mobile dropdown toggles
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      const dropdown = this.parentNode.nextElementSibling;
+      if (dropdown) {
+        dropdown.classList.toggle('dropdown-active');
+      }
       e.stopImmediatePropagation();
     });
   });
 
-  /**
-   * Scroll top button
-   */
-  let scrollTop = document.querySelector('.scroll-top');
-
+  // Scroll to top button
+  const scrollTop = document.querySelector('.scroll-top');
   function toggleScrollTop() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  });
-
+  }
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
+  // AOS Animation
   function aosInit() {
-    AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    } else {
+      console.warn("AOS not loaded");
+    }
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // GLightbox
+  if (typeof GLightbox !== 'undefined') {
+    GLightbox({ selector: '.glightbox' });
+  }
 
-  /**
-   * Init swiper sliders
-   */
+  // Swiper init
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+    document.querySelectorAll(".init-swiper").forEach(swiperElement => {
+      const configElement = swiperElement.querySelector(".swiper-config");
+      if (!configElement) return;
 
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
+      try {
+        const config = JSON.parse(configElement.innerHTML.trim());
+        if (swiperElement.classList.contains("swiper-tab")) {
+          initSwiperWithCustomPagination(swiperElement, config);
+        } else {
+          new Swiper(swiperElement, config);
+        }
+      } catch (err) {
+        console.error("Swiper config error:", err);
       }
     });
   }
-
   window.addEventListener("load", initSwiper);
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
+  // Pure Counter
+  if (typeof PureCounter !== 'undefined') {
+    new PureCounter();
+  }
 
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+  // FAQ toggle
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentNode.classList.toggle('faq-active');
     });
   });
 
-  /**
-   * Correct scrolling position upon page load for URLs containing hash links.
-   */
-  window.addEventListener('load', function(e) {
-    if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        setTimeout(() => {
-          let section = document.querySelector(window.location.hash);
-          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-          window.scrollTo({
-            top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
-          });
-        }, 100);
-      }
+  // Adjust scroll position for hash links on load
+  window.addEventListener('load', () => {
+    if (window.location.hash && document.querySelector(window.location.hash)) {
+      setTimeout(() => {
+        const section = document.querySelector(window.location.hash);
+        const scrollMarginTop = getComputedStyle(section).scrollMarginTop || "0";
+        window.scrollTo({
+          top: section.offsetTop - parseInt(scrollMarginTop),
+          behavior: 'smooth'
+        });
+      }, 100);
     }
   });
 
-  /**
-   * Navmenu Scrollspy
-   */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
-
+  // Scrollspy for navmenu
+  const navmenulinks = document.querySelectorAll('.navmenu a');
   function navmenuScrollspy() {
-    navmenulinks.forEach(navmenulink => {
-      if (!navmenulink.hash) return;
-      let section = document.querySelector(navmenulink.hash);
+    const position = window.scrollY + 200;
+    navmenulinks.forEach(link => {
+      if (!link.hash) return;
+      const section = document.querySelector(link.hash);
       if (!section) return;
-      let position = window.scrollY + 200;
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
-        navmenulink.classList.add('active');
+      if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
+        document.querySelectorAll('.navmenu a.active').forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
       } else {
-        navmenulink.classList.remove('active');
+        link.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
 
-// Define an array of strings to be displayed and erased
-const textArray = [
-  "50–70% more affordable than local agencies.",
-  "Communication and work hours according You.",
-  "Less than your monthly coffee habit.",
-  "Launch your dream with the cost of a weekend getaway."
-  
-  // Add more strings as needed
-];
+// Typing animation for rotating text
 
-// Initialize variables
-let typeJsText = document.querySelector(".animatedText");
-let stringIndex = 0; // Index of the current string in the array
-let charIndex = 0; // Index of the current character in the current string
-let isTyping = true; // Whether we are currently typing or erasing
+document.addEventListener("DOMContentLoaded", function () {
+    const textArray = [
+      "50–70% more affordable than local agencies.",
+      "Communication and work hours according to you.",
+      "Less than your monthly coffee habit.",
+      "Launch your dream with the cost of a weekend getaway."
+    ];
 
-function typeJs() {
-  if (stringIndex < textArray.length) {
-    // Check if there are more strings to display or erase
-    const currentString = textArray[stringIndex];
+    const typeJsText = document.querySelector(".animatedText");
 
-    if (isTyping) {
-      // Typing animation
-      if (charIndex < currentString.length) {
-        typeJsText.innerHTML += currentString.charAt(charIndex);
-        charIndex++;
-      } else {
-        isTyping = false; // Switch to erasing mode
-      }
-    } else {
-      // Erasing animation
-      if (charIndex > 0) {
-        typeJsText.innerHTML = currentString.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        isTyping = true; // Switch back to typing mode
-        stringIndex++; // Move to the next string
+    if (!typeJsText) return;
 
-        if (stringIndex >= textArray.length) {
-          stringIndex = 0; // Reset to the beginning of the array
+    // Ensure no text is shown initially
+    typeJsText.textContent = "";
+
+    let stringIndex = 0;
+    let charIndex = 0;
+    let isTyping = true;
+
+    function typeJs() {
+      const currentString = textArray[stringIndex];
+
+      if (isTyping) {
+        if (charIndex < currentString.length) {
+          typeJsText.textContent += currentString.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeJs, 80);
+        } else {
+          isTyping = false;
+          setTimeout(typeJs, 1500); // Pause before erasing
         }
-
-        charIndex = 0; // Reset character index
-        typeJsText.innerHTML = ""; // Clear the content for the new string
+      } else {
+        if (charIndex > 0) {
+          typeJsText.textContent = currentString.substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(typeJs, 40);
+        } else {
+          isTyping = true;
+          stringIndex = (stringIndex + 1) % textArray.length;
+          setTimeout(typeJs, 300); // Small delay before next string starts
+        }
       }
     }
-  }
-}
 
-// Set an interval to call the typeJs function
-setInterval(typeJs, 100); // You can adjust the animation speed as needed
+    // Start typing
+    typeJs();
+  });
